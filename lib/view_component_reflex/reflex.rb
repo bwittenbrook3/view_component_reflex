@@ -68,7 +68,8 @@ module ViewComponentReflex
         url: url,
         morph: :page,
         attrs: {
-          "data-key" => element.dataset[:key]
+          "data-key" => element.dataset[:key], 
+          "data-controller" => reflex_controller
         }
       }
     end
