@@ -63,13 +63,11 @@ module ViewComponentReflex
         reflex_id: reflex_id,
         xpath: xpath,
         target: target,
-        c_xpath: c_xpath,
         reflex_controller: reflex_controller,
         url: url,
         morph: :page,
         attrs: {
-          "data-key" => element.dataset[:key], 
-          "data-controller" => reflex_controller
+          key: element.dataset[:key]
         }
       }
     end
